@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Form</title>
+    <link rel="stylesheet" href="Form.css">
+</head>
+<body>
+    <div class="container">
+    <form action="">
+        <h1><u>Share Your Recipe: Form</u></h1><hr>
+        <p>Fields marked with * are must required</p><hr>
+        <h2><u>Your Information:</u></h2>
+        <p>Name: *<input type="text" name="name" placeholder="Name" required></p>
+        <p>Date Of Birth: *<input type="date" name="DOB" required></p>
+        <fieldset >
+            <legend>Gender*</legend>
+            <p>
+                Male <input type="radio" name="gender" id="male" required> Female <input type="radio" name="gender" id="female" required>
+            </p>
+        </fieldset>
+        <p>Contact Number: *<input type="tel" name="contacy" id="contact" placeholder="1234561890" required></p>
+        <p>Address: *<textarea name="address" id="address" cols="100" rows="5" placeholder="Enter Your Address" required></textarea></p>
+        <p>Pincode: *<input type="number" name="pincode" id="pincode" placeholder="123456" required></p>
+        <p>Email: <input type="email" name="email" id="email" placeholder="Name@gmail.com"></p>
+        <h2><u>About Your Recipe:</u></h2>
+        <p>Recipe's Name: *<input type="text" name="recipename" id="recipename" placeholder="Recipe Name" required></p>
+        <p>Description: *<input type="text" name="description" id="description" placeholder="Write Your Description" required></p>
+        <p>Image: <input type="file" name="image" id="image"></p>
+        <p>Recipe: *<input type="file" name="recipe" id="recipe" required></p>
+        <p>Refrence video url: <input type="url" name="video" id="video"  placeholder="scheme://host.domain[:port]/pat/filename"></p>
+        <input type="submit" value="SUBMIT">
+        <input type="reset" value="CANCEL">
+    </form>
+    </div>
+</body>
+</html>
